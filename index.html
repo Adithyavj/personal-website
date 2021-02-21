@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +7,10 @@
     <title>Adithya Vijay K</title>
     <link rel="icon" href="https://media-exp1.licdn.com/dms/image/C5103AQGW40n-3fWb-Q/profile-displayphoto-shrink_200_200/0/1532623322950?e=1619654400&v=beta&t=1btbiJv5JrVTiM0-bSmG6Uzx2h5A1Z0f-GBrcDOaMg8" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <header class="bg-info">
+    <header class="bg-info" style="width: 100%; position:fixed; z-index: 1;">
         <div class="row text-white">
             <div class="col-8 col-md-6 p-3 pl-4">
                 <h2>Adithya Vijay K</h2>
@@ -23,16 +24,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                          <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                          <a class="nav-link text-white" href="#section-home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-white" href="#">Services</a>
+                          <a class="nav-link text-white" href="#section-service">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Experiences</a>
+                            <a class="nav-link text-white" href="#section-experience">Experiences</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contact me</a>
+                        <a class="nav-link text-white" href="#section-contact">Contact me</a>
                         </li>
                       </ul>
                     </div>
@@ -40,14 +41,14 @@
             </div>
         </div>
     </header>
-    <section class="p-4">
+    <section id="section-home" style="padding-top: 10em;">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img style="height: 500px; width: 500px;" src="images/profile-photo-dxb.jpeg" class="img-fluid rounded-circle"  alt="">
+                    <img style="height: 450px; width: 450px;" src="images/profile-photo-dxb.jpeg" class="img-fluid rounded-circle"  alt="">
                 </div>
                 <div class="col-md-6">
-                    <h4>Software Engineer at MICTCO IT Solutions<br>
+                    <h4 class="pt-4">Software Engineer at MICTCO IT Solutions<br>
                         Kerala,India
                     </h4>
                     <blockquote class="blockquote">
@@ -58,12 +59,12 @@
             </div>
         </div>
     </section>
-    <section class="bg-light p-5">
+    <section id="section-service" class="bg-light p-5">
         <div class="container-fluid">
             <h1 class="text-center">Services</h1>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card text-center p-2" style="width: 18rem;">
+                    <div class="card text-center p-2" style="height: 18rem;">
                         <i class="fas fa-code display-1 text-info"></i>
                         <div class="card-body">
                             <h5 class="card-title">Software Development</h5>
@@ -72,16 +73,16 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center p-2" style="width: 18rem;">
+                    <div class="card text-center p-2" style="height: 18rem;">
                         <i class="fas fa-database display-1 text-info"></i>
                         <div class="card-body">
                             <h5 class="card-title">DataBase Design</h5>
-                            <p class="card-text">Design relational databases based on businees logic with the capacity to retrieve millions of records easily</p>
+                            <p class="card-text">Design relational databases based on business logic with the capacity to retrieve millions of records easily</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center p-2" style="width: 18rem;">
+                    <div class="card text-center p-2" style="height: 18rem;">
                         <i class="fab fa-html5 display-1 text-info"></i>
                         <div class="card-body">
                             <h5 class="card-title">Web Designing</h5>
@@ -92,16 +93,16 @@
             </div>
             <div class="row pt-3">
                 <div class="col-md-4">
-                    <div class="card text-center p-2" style="width: 18rem;">
+                    <div class="card text-center p-2" style="height: 18rem;">
                         <i class="fas fa-business-time display-1 text-info"></i>
                         <div class="card-body">
                             <h5 class="card-title">Accounting Solutions</h5>
-                            <p class="card-text">Accouting knowledge by working with ERP's for about 2 years</p>
+                            <p class="card-text">Accouting knowledge by working with ERP's for about 2+ years</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center p-2" style="width: 18rem;">
+                    <div class="card text-center p-2" style="height: 18rem;">
                         <i class="fas fa-chalkboard-teacher display-1 text-info"></i>
                         <div class="card-body">
                             <h5 class="card-title">IT Consulting</h5>
@@ -110,7 +111,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center p-2" style="width: 18rem;">
+                    <div class="card text-center p-2" style="height: 18rem;">
                         <i class="fas fa-code-branch display-1 text-info"></i>
                         <div class="card-body">
                             <h5 class="card-title">Git Source Control</h5>
@@ -121,7 +122,102 @@
             </div>
         </div>
     </section>
+    <section id="section-experience" class="bg-white">
+        <div class="container-fluid p-5">
+            <h1 class="text-center">Experiences</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="http://www.mictco.com/">
+                        <div class="card text-center p-2" style="width: 18rem; height: 25rem;">
+                            <img style="height: 15rem;" src="https://media-exp1.licdn.com/dms/image/C560BAQEJ6SOuUXrGnQ/company-logo_200_200/0/1596867506878?e=1622073600&v=beta&t=7Og6PZEEEiyltBSA5EGwpuDpJy8lOJ3A8V7D_mZ3Kz0" alt=""
+                            class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">MICTCO IT Solutions</h5>
+                                <p class="card-text">Lead Software Engineer</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-2" style="width: 18rem; height: 25rem;">
+                        <img style="height: 15rem;" src="https://media-exp1.licdn.com/dms/image/C510BAQH1fqAE4CbRhg/company-logo_200_200/0/1543912546463?e=1622073600&v=beta&t=VIZtilRbpAhsa94nDKAJgDFvWEKlMjnmti2JHkEQRDI" alt=""
+                        class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Soft-tronix</h5>
+                            <p class="card-text">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-2" style="width: 18rem; height: 25rem;">
+                        <img style="height: 15rem;" src="https://cdn.dribbble.com/users/2389416/screenshots/4834681/freelance-2.jpg" alt=""
+                        class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">FreeLance</h5>
+                            <p class="card-text">Web Design and Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-contact" class=" bg-light p-5">
+        <div class="containter-fluid">
+            <h1 class="text-center">Contact me</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputName4">Name</label>
+                            <input type="text" class="form-control" id="inputName4" placeholder="Name">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPlace4">Place</label>
+                            <input type="text" class="form-control" id="inputPlace4" placeholder="Place">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputemail4">Email</label>
+                              <input type="email" class="form-control" id="inputemail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputmobile4">Mobile</label>
+                              <input type="tel" class="form-control" id="inputmobile4" placeholder="Mobile">
+                            </div>
+                        </div>
 
+                        <div class="form-group">
+                          <label for="inputmessages">Messages</label>
+                          <textarea class="form-control" cols="30" rows="6" placeholder="Type your messages here..."></textarea>
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-info">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center text-white">
+                    <a href="https://www.linkedin.com/in/adithyavijayk/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="https://github.com/Adithyavj">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <p>Copyright &#169; 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
