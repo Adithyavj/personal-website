@@ -166,31 +166,31 @@
             <h1 class="text-center">Contact me</h1>
             <div class="row">
                 <div class="col-md-12">
-                    <form>
+                    <form id="submit-form" action="">
                         <div class="form-row">
                           <div class="form-group col-md-6">
                             <label for="inputName4">Name</label>
-                            <input type="text" class="form-control" id="inputName4" placeholder="Name">
+                            <input name="name" type="text" class="form-control" id="inputName4" placeholder="Name">
                           </div>
                           <div class="form-group col-md-6">
                             <label for="inputPlace4">Place</label>
-                            <input type="text" class="form-control" id="inputPlace4" placeholder="Place">
+                            <input name="place" type="text" class="form-control" id="inputPlace4" placeholder="Place">
                           </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                               <label for="inputemail4">Email</label>
-                              <input type="email" class="form-control" id="inputemail4" placeholder="Email">
+                              <input name="email" type="email" class="form-control" id="inputemail4" placeholder="Email">
                             </div>
                             <div class="form-group col-md-6">
                               <label for="inputmobile4">Mobile</label>
-                              <input type="tel" class="form-control" id="inputmobile4" placeholder="Mobile">
+                              <input name="mobile" type="tel" class="form-control" id="inputmobile4" placeholder="Mobile">
                             </div>
                         </div>
 
                         <div class="form-group">
                           <label for="inputmessages">Messages</label>
-                          <textarea class="form-control" cols="30" rows="6" placeholder="Type your messages here..."></textarea>
+                          <textarea name="message" class="form-control" cols="30" rows="6" placeholder="Type your messages here..."></textarea>
                         </div>
                         <div class="form-group text-center">
                             <button type="submit" class="btn btn-primary">Submit</button>
@@ -218,10 +218,30 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/56a28cfa9b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzniIDwB8GTv8feeMCoBTbWMqoZGyylH5L2b88NFDpvT5Ts5IUIm40m/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 </body>
 </html>
